@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookStore</string>
+
+    <string name="COLUMN_BOOK_PRODUCT_NAME">world</string>
+    <string name="COLUMN_BOOK_PRICE">20 USD</string>
+    <string name="COLUMN_BOOK_QUANTITY">5</string>
+    <string name="COLUMN_BOOK_SUPPLIER_NAME">ali</string>
+    <string name="COLUMN_BOOK_SUPPLIER_PHONE">00252465485</string>
+</resources>
