@@ -21,8 +21,6 @@ public class BookDbHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    public static final String LOG_TAG = BookDbHelper.class.getSimpleName();
-
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
@@ -33,7 +31,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 + BookEntry.COLUMN_BOOK_QUANTITY + " INTEGER NOT NULL DEFAULT 0, "
                 + BookEntry.COLUMN_BOOK_SUPPLIER_NAME + " TEXT , "
                 + BookEntry.COLUMN_BOOK_SUPPLIER_PHONE + " INTEGER NOT NULL DEFAULT 0); ";
-
+        
         sqLiteDatabase.execSQL(SQL_CREATE_BOOKS_TABLE);
     }
 

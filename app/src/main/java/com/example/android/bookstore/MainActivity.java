@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         BookDbHelper bookDbHelper = new BookDbHelper(this);
         SQLiteDatabase db = bookDbHelper.getReadableDatabase();
         cursor = db.query(BookEntry.TABLE_NAME, null, null, null, null, null, null);
-        TextView displayView = (TextView) findViewById(R.id.text_view_book);
+        TextView displayView = findViewById(R.id.text_view_book);
         try {
             displayView.setText("The books table contains " + cursor.getCount() + " book.\n\n");
             displayView.append(BookEntry._ID + " - " +
