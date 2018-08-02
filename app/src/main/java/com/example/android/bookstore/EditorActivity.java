@@ -267,7 +267,7 @@ public class EditorActivity extends AppCompatActivity implements
                 // If the Book hasn't changed, continue with navigating up to parent activity
                 // which is the {@link CatalogActivity}.
                 if (!mBookHasChanged) {
-
+                    NavUtils.navigateUpFromSameTask(EditorActivity.this);
                     return true;
                 }
                 DialogInterface.OnClickListener discardButtonClickListener =
