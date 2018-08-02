@@ -16,5 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <provider
+            android:name=".Data.BookProvider"
+            android:authorities="com.example.android.bookstore"
+            android:exported="false" />
+
+
     </application>
+
 </manifest>

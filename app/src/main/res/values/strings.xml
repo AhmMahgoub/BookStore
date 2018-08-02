@@ -2,8 +2,92 @@
     <string name="app_name">BookStore</string>
 
     <string name="COLUMN_BOOK_PRODUCT_NAME">world</string>
-    <string name="COLUMN_BOOK_PRICE">20 USD</string>
+    <string name="COLUMN_BOOK_PRICE">20 </string>
     <string name="COLUMN_BOOK_QUANTITY">5</string>
     <string name="COLUMN_BOOK_SUPPLIER_NAME">ali</string>
     <string name="COLUMN_BOOK_SUPPLIER_PHONE">00252465485</string>
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Books</string>
+
+    <string name="category_name">Product Name</string>
+    <string name="hint_book_name">Name</string>
+    <string name="price">price</string>
+    <string name="hint_price">Price</string>
+    <string name="quantity">quantity</string>
+    <string name="hint_quantity">quantity</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="hint_supplier_name">Supplier Name</string>
+    <string name="Supplier_phone">contact</string>
+    <string name="hint_contact">phone</string>
+    <string name="unit_book_currency">USD</string>
+
+    <string name="editor_activity_title_new_book">Add a book</string>
+    <string name="editor_activity_title_edit_book">Edit book</string>
+
+    <string name="editor_insert_book_failed">Error with saving book</string>
+    <string name="editor_insert_book_successful">Book saved</string>
+
+    <string name="editor_update_book_failed">Error with updating book</string>
+    <string name="editor_update_book_successful">Book updated</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">Pet deleted</string>
+
+    <!-- Toast message in editor when current pet has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting pet</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current pet [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this pet?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current pet [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <string name="cancel">Cancel</string>
+    <!-- Dialog button text for the option to cancel deletion of the current pet [CHAR LIMIT=20] -->
+    <string name="valid_sale">Sale is done</string>
+
+    <string name="invalid_sale">Sale is failed</string>
+
+    <string name="out_of_stock">out of stock</string>
+
+    <string name="basic_chains">Basic Chains</string>
+
+    <string name="cannot_make_call">Cannot make a call</string>
+
+    <string name="empty_view_title_text">Let s start</string>
+
+    <string name="empty_view_subtitle_text">Add new Books</string>
+
+    <!--Error invalid productName [CHAR LIMIT=40] -->
+    <string name="err_invalid_product_name">Name field required</string>
+
+    <!--Error invalid supplierName [CHAR LIMIT=40] -->
+    <string name="err_invalid_supplier_name">supplier name field Required</string>
+
+    <!--Error invalid supplier phone [CHAR LIMIT=40] -->
+    <string name="err_invalid_supplier_phone_number">supplier phone number field Required</string>
+
+    <!--Error invalid quantity [CHAR LIMIT=40] -->
+    <string name="err_invalid_quantity">quantity field Required</string>
+
+    <!--Error invalid price [CHAR LIMIT=40] -->
+    <string name="err_invalid_price">price field Required</string>
+
+    <string name= "phone" >phone </string>
+    <string name= "Currency" >USD </string>
+    <string name= "Remaining_Quantity" >Remaining </string>
+    <string name= "Sale" >Sale </string>
+
+    <string name= "InvalidQuantity" >Cannot be less than 0 </string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
 </resources>

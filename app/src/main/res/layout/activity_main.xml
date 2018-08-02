@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.bookstore.MainActivity">
 
-    <TextView
-        android:id="@+id/text_view_book"
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/activity_margin"/>
+        android:focusable="true"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/add_book"
+        android:text="add Book"
+        style="@style/AddButtonBook" />
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/open_book"/>
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:text="@string/empty_view_title_text"
+            style="@style/TitleEmptyView" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:text="@string/empty_view_subtitle_text"
+            style="@style/SubTitleEmptyView" />
+    </RelativeLayout>
+</RelativeLayout>

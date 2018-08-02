@@ -7,5 +7,136 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="CategoryStyle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:paddingTop">@dimen/dim16</item>
+    <item name="android:textColor">@color/colorAccent</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="EditorTextViewStyle">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">@dimen/dim0</item>
+    <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+    <style name="EditorEditViewStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/dim0</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+    <style name="EditorButtonsStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
 
+    <style name="AddBookButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/dim16</item>
+    </style>
+
+    <style name="AddButtonBook">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/rectangular_button</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+    </style>
+
+    <style name="TitleEmptyView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_shelter_image</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">@dimen/dim16</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="SubTitleEmptyView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_title_text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:paddingTop">@dimen/dim8</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#A2AAB0</item>
+    </style>
+
+    <style name="BookNameHead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textSize">@dimen/text_size_25</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#2B3D4D</item>
+    </style>
+
+    <style name="SummaryBook">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/sweeden_first</item>
+    </style>
+
+    <style name="CurrencyUnitIndex">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_toRightOf">@id/summary</item>
+        <item name="android:layout_toEndOf">@id/name</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_below">@id/quantity</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/sweeden_first</item>
+    </style>
+
+    <style name="QuantityIndex">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/dim16</item>
+        <item name="android:layout_marginRight">@dimen/dim16</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_toRightOf">@id/quantity</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_toEndOf">@id/name</item>
+        <item name="android:layout_below">@id/name</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/sweeden_first</item>
+    </style>
+
+    <style name="SaleButton">
+        <item name="android:layout_width">@dimen/dim60</item>
+        <item name="android:layout_height">@dimen/dim60</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>

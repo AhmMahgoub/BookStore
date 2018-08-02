@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim120"
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:padding="@dimen/activity_margin">
+
+<LinearLayout
+    android:layout_width="@dimen/dim0"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/name"
+        tools:text = "TheName"
+        style="@style/BookNameHead" />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_below="@id/name"
+        tools:text = "Quantity"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        style="@style/SummaryBook" />
+
+    <TextView
+        android:id="@+id/summary"
+        style="@style/SummaryBook"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/quantity"
+        tools:text = "Price"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
+
+    <TextView
+        android:id="@+id/Unit"
+        tools:text = "USD"
+        android:text="@string/Currency"
+        style="@style/CurrencyUnitIndex" />
+
+    <TextView
+        android:id="@+id/remaining"
+        tools:text = "Remaining"
+        android:text="@string/Remaining_Quantity"
+        style="@style/QuantityIndex" />
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dim0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/sale"
+            android:text="@string/Sale"
+            style="@style/SaleButton" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

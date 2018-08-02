@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/text_book_name"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:text="Book_name"
+        android:textColor="@color/sweeden_first"
+        app:layout_constraintBottom_toTopOf="@+id/edit_price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_book_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_book_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/edit_book_name"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim16"
+        android:layout_marginLeft="@dimen/dim26"
+        android:layout_marginStart="@dimen/dim26"
+        android:layout_marginTop="@dimen/dim8"
+        android:hint="@string/hint_book_name"
+        android:inputType="textCapWords"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edit_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_book_name"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/text_price_name"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textColor="@color/sweeden_first"
+
+        app:layout_constraintBottom_toTopOf="@id/edit_supplier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_price"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim16"
+        android:hint="@string/hint_price"
+        android:inputType="number"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toTopOf="@+id/edit_supplier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_price_name"
+        app:layout_constraintStart_toStartOf="@id/edit_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_book_name"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/supplier_text_name"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_name"
+        android:textColor="@color/sweeden_first"
+
+        app:layout_constraintBottom_toTopOf="@id/edit_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_supplier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_supplier"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/edit_supplier"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim16"
+        android:hint="@string/hint_supplier_name"
+        android:inputType="textCapWords"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edit_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/text_price_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/edit_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_price"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textColor="@color/sweeden_first"
+
+        app:layout_constraintBottom_toBottomOf="@id/edit_phone"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_phone"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/callnow"
+        app:layout_constraintBottom_toBottomOf="@id/edit_phone"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/edit_phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_phone"
+        tools:layout_constraintBottom_creator="1" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_contact"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/edit_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/order_button"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="@id/phone_text"
+        app:layout_constraintStart_toStartOf="@id/edit_supplier"
+        app:layout_constraintTop_toBottomOf="@+id/edit_supplier"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/edit_quantity"
+        android:layout_width="@dimen/dim0"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim16"
+        android:hint="@string/hint_quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@+id/Increment"
+        app:layout_constraintRight_toLeftOf="@+id/decrement"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone"
+        app:layout_constraintTop_toTopOf="@id/decrement"
+        tools:layout_constraintBottom_creator="1" />
+
+    <Button
+        android:id="@+id/Increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim8"
+        android:background="@drawable/plusicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/edit_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone"
+        tools:layout_constraintBottom_creator="1" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim8"
+        android:background="@drawable/minusicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/edit_quantity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone"
+        tools:layout_constraintBottom_creator="1" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
